@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <html lang="pt-br" data-contexto="dark">
+    <html lang="pt-br" data-contexto="light">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,10 +18,24 @@
         <script src="app/script.js" defer></script>
     </head>
     <body>
-        <h1> Sueca </i></h1>
-        <div id="box">            
-        </div>
-        <button id="iniciarRetirar">Iniciar jogo</button>
-        <div id="cartas-faltantes"></div>
+        <header>
+            <div class="cabecalho logo">Logo</div>
+            <div class="cabecalho modo-noturno"> 
+                <div class="modo-noturno-texto">Modo Noturno</div> 
+                <label class="switch">
+                    <input type="checkbox" id="alterar-modo-noturno">
+                    <span class="slider round"></span>
+                </label>               
+            </div>
+        </header>
+        <nav>
+            <h1> Sueca </i></h1>
+            <div id="box">            
+            </div>
+            <button id="iniciarRetirar">Iniciar jogo</button>
+            <div id="cartas-faltantes"></div>    
+        </nav>
+        <footer>
+        </footer>
     </body>
 </html>

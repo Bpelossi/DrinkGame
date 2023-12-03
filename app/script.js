@@ -1,6 +1,8 @@
 const btnIniciarRetirar= document.getElementById('iniciarRetirar');
 const display = document.getElementById('box');
 const displayCartas = document.getElementById('cartas-faltantes');
+const modoNoturno = document.getElementById('alterar-modo-noturno');
+const html = document.querySelector('html');
 var carta = null;
 let deck1 = null;
 
@@ -49,3 +51,11 @@ btnIniciarRetirar.addEventListener('click',()=>{
 function fimDeJogo(){
     display.innerHTML=`<div id='fim-de-jogo'> FIM DE JOGO </div>`; 
 }
+
+modoNoturno.addEventListener('change',()=>{
+    if(html.getAttribute('data-contexto')=='light'){
+        html.setAttribute('data-contexto','dark');
+    } else {
+        html.setAttribute('data-contexto','light');
+    }
+})
