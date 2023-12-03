@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Play&display=swap');
+
+:root{
+    --font-family: 'Montserrat', sans-serif;
+}
+
+[data-contexto="light"] {
+    --bg-color: #C96E12;
+    --primary-color: #FFF897;
+    --secondary-color: #F6C101; 
+}
+
+[data-contexto="dark"] {
+    --bg-color: #282A3A;
+    --primary-color: #C69749;
+    --secondary-color: #735F32;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    font-family: var(--font-family);
+}
+
+h1 {
+    font-size: 5em;
+}
+
+button {
+    font-size: 1.5em;
+    margin-top: 20px;
+    padding: 8px 15px;
+    border: 0px;
+    border-radius: 12px;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
+hr {
+    border: 1px solid var(--primary-color);
+}
+
+#carta {
+    font-size: 1.5em;
+    height: 11.5em;
+    width: 9.5em;
+    margin-top: 20px;
+    padding: 8px 15px;
+    border: 1px solid var(--primary-color);
+    border-radius: 12px;
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+}
+
+#valor-carta {
+    font-size: 3.5em;
+}
+
+#valor-inicio{
+    font-size: 2em;
+}
+
+#fim-de-jogo{
+    font-size: 4em;
+    font-weight: bolder;
+    margin: 20px;
+}
+
+#cartas-faltantes{
+    margin: 10px;
+}
+
+
